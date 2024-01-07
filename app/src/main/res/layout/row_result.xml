@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
-    <data>
-        <variable name="resultRowModel" type="com.arunwichsapplication.app.modules.result.data.model.ResultRowModel"/>
-    </data>
+    <data/>
     <LinearLayout android:gravity="start" android:id="@+id/linearColumn"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
@@ -31,8 +29,7 @@
                 android:layout_marginStart="@dimen/_10pxh"
                 android:layout_marginTop="@dimen/_8pxv"
                 android:layout_width="wrap_content"
-                android:singleLine="true"
-                android:text="@{resultRowModel.txtFive}"
+                android:singleLine="true" android:text="@string/lbl"
                 style="@style/txtIntermedium13" tools:text="@string/lbl"/>
             <TextView android:ellipsize="end" android:id="@+id/txtSix"
                 android:layout_height="wrap_content"
@@ -40,8 +37,7 @@
                 android:layout_marginStart="@dimen/_10pxh"
                 android:layout_marginTop="@dimen/_6pxv"
                 android:layout_width="wrap_content"
-                android:singleLine="true"
-                android:text="@{resultRowModel.txtSix}"
+                android:singleLine="true" android:text="@string/lbl2"
                 style="@style/txtIntermedium14_2" tools:text="@string/lbl2"/>
             <LinearLayout android:gravity="start"
                 android:id="@+id/linearRowvectorthirtyone"
@@ -102,7 +98,7 @@
                     android:layout_width="0dp"
                     android:lineSpacingExtra="@dimen/_3pxh"
                     android:singleLine="true"
-                    android:text="@{resultRowModel.txtNumbersold}"
+                    android:text="@string/lbl_number_sold"
                     style="@style/txtInterregular10" tools:text="@string/lbl_number_sold"/>
             </LinearLayout>
             <LinearLayout android:gravity="start"
@@ -129,7 +125,7 @@
                     android:layout_width="0dp"
                     android:lineSpacingExtra="@dimen/_3pxh"
                     android:singleLine="true"
-                    android:text="@{resultRowModel.txtSeven}"
+                    android:text="@string/lbl5"
                     style="@style/txtInterregular10_1" tools:text="@string/lbl5"/>
             </LinearLayout>
         </LinearLayout>

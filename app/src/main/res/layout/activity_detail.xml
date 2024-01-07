@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
-    <data>
-        <variable name="detailVM" type="com.arunwichsapplication.app.modules.detail.data.viewmodel.DetailVM"/>
-    </data>
+    <data/>
     <LinearLayout android:gravity="start"
         android:id="@+id/linearColumnarrowleft"
         android:layout_height="match_parent"
@@ -102,7 +100,7 @@
                             android:layout_marginEnd="@dimen/_10pxh"
                             android:layout_width="wrap_content"
                             android:singleLine="true"
-                            android:text="@{detailVM.detailModel.txtOne}"
+                            android:text="@string/lbl"
                             style="@style/txtInterbold24" tools:text="@string/lbl"/>
                         <TextView android:ellipsize="end"
                             android:id="@+id/txtTwo"
@@ -112,7 +110,7 @@
                             android:layout_width="wrap_content"
                             android:lineSpacingExtra="@dimen/_6pxh"
                             android:singleLine="true"
-                            android:text="@{detailVM.detailModel.txtTwo}"
+                            android:text="@string/lbl2"
                             style="@style/txtIntersemibold24" tools:text="@string/lbl2"/>
                     </LinearLayout>
                     <LinearLayout android:id="@+id/linearRowthree"
@@ -132,7 +130,7 @@
                             android:layout_width="0dp"
                             android:lineSpacingExtra="@dimen/_4pxh"
                             android:singleLine="true"
-                            android:text="@{detailVM.detailModel.txtThree}"
+                            android:text="@string/lbl3"
                             style="@style/txtIntersemibold16_2" tools:text="@string/lbl3"/>
                         <TextView android:ellipsize="end"
                             android:id="@+id/txtOneTwo"
@@ -144,7 +142,7 @@
                             android:layout_width="0dp"
                             android:lineSpacingExtra="@dimen/_4pxh"
                             android:singleLine="true"
-                            android:text="@{detailVM.detailModel.txtOneTwo}"
+                            android:text="@string/lbl_1"
                             style="@style/txtIntersemibold16_2" tools:text="@string/lbl_1"/>
                         <TextView android:ellipsize="end"
                             android:id="@+id/txtFour"
@@ -156,7 +154,7 @@
                             android:layout_width="0dp"
                             android:lineSpacingExtra="@dimen/_4pxh"
                             android:singleLine="true"
-                            android:text="@{detailVM.detailModel.txtFour}"
+                            android:text="@string/lbl4"
                             style="@style/txtIntersemibold16_2" tools:text="@string/lbl4"/>
                     </LinearLayout>
                 </LinearLayout>
@@ -226,7 +224,7 @@
                             android:layout_width="0dp"
                             android:lineSpacingExtra="@dimen/_3pxh"
                             android:singleLine="true"
-                            android:text="@{detailVM.detailModel.txtNumber}"
+                            android:text="@string/lbl_number"
                             style="@style/txtInterregular14" tools:text="@string/lbl_number"/>
                     </LinearLayout>
                     <LinearLayout android:id="@+id/linearRowfavorite"
@@ -262,7 +260,7 @@
                     android:layout_width="wrap_content"
                     android:lineSpacingExtra="@dimen/_4pxh"
                     android:singleLine="true"
-                    android:text="@{detailVM.detailModel.txtColor}"
+                    android:text="@string/lbl_color"
                     style="@style/txtInterbold18" tools:text="@string/lbl_color"/>
                 <LinearLayout android:gravity="start"
                     android:id="@+id/linearRowframe2427"
@@ -282,7 +280,7 @@
                         android:paddingStart="@dimen/_10pxh"
                         android:paddingTop="@dimen/_7pxv"
                         android:singleLine="true"
-                        android:text="@{detailVM.detailModel.txtFrame2427}"
+                        android:text="@string/lbl_color2"
                         style="@style/txtSolidRoundedOutline" tools:text="@string/lbl_color2"/>
                     <TextView android:ellipsize="end"
                         android:id="@+id/txtFrame2428"
@@ -296,7 +294,7 @@
                         android:paddingStart="@dimen/_10pxh"
                         android:paddingTop="@dimen/_7pxv"
                         android:singleLine="true"
-                        android:text="@{detailVM.detailModel.txtFrame2428}"
+                        android:text="@string/lbl_color2"
                         style="@style/txtSolidRoundedOutline" tools:text="@string/lbl_color2"/>
                     <TextView android:ellipsize="end"
                         android:id="@+id/txtFrame2430"
@@ -310,7 +308,7 @@
                         android:paddingStart="@dimen/_10pxh"
                         android:paddingTop="@dimen/_7pxv"
                         android:singleLine="true"
-                        android:text="@{detailVM.detailModel.txtFrame2430}"
+                        android:text="@string/lbl_color2"
                         style="@style/txtSolidRoundedOutline" tools:text="@string/lbl_color2"/>
                     <TextView android:ellipsize="end"
                         android:id="@+id/txtFrame2429"
@@ -324,7 +322,7 @@
                         android:paddingStart="@dimen/_10pxh"
                         android:paddingTop="@dimen/_7pxv"
                         android:singleLine="true"
-                        android:text="@{detailVM.detailModel.txtFrame2429}"
+                        android:text="@string/lbl_color2"
                         style="@style/txtSolidRoundedOutline" tools:text="@string/lbl_color2"/>
                 </LinearLayout>
                 <TextView android:ellipsize="end"
@@ -336,7 +334,7 @@
                     android:layout_width="wrap_content"
                     android:lineSpacingExtra="@dimen/_4pxh"
                     android:singleLine="true"
-                    android:text="@{detailVM.detailModel.txtSize}"
+                    android:text="@string/lbl_size"
                     style="@style/txtInterbold18" tools:text="@string/lbl_size"/>
                 <LinearLayout android:gravity="start"
                     android:id="@+id/linearRows"
@@ -386,7 +384,7 @@
                         android:paddingStart="@dimen/_12pxh"
                         android:paddingTop="@dimen/_7pxv"
                         android:singleLine="true"
-                        android:text="@{detailVM.detailModel.txtFrame2430One}"
+                        android:text="@string/lbl_l"
                         style="@style/txtSolidRoundedOutline" tools:text="@string/lbl_l"/>
                     <TextView android:ellipsize="end"
                         android:id="@+id/txtFrame2429One"
@@ -400,7 +398,7 @@
                         android:paddingStart="@dimen/_7pxh"
                         android:paddingTop="@dimen/_7pxv"
                         android:singleLine="true"
-                        android:text="@{detailVM.detailModel.txtFrame2429One}"
+                        android:text="@string/lbl_xl"
                         style="@style/txtSolidRoundedOutline" tools:text="@string/lbl_xl"/>
                 </LinearLayout>
                 <TextView android:ellipsize="end"
@@ -412,7 +410,7 @@
                     android:layout_width="wrap_content"
                     android:lineSpacingExtra="@dimen/_4pxh"
                     android:singleLine="true"
-                    android:text="@{detailVM.detailModel.txtDescription}"
+                    android:text="@string/lbl_description"
                     style="@style/txtIntersemibold18_1" tools:text="@string/lbl_description"/>
                 <TextView android:gravity="center_horizontal"
                     android:id="@+id/txtDescriptionOne"
@@ -422,7 +420,7 @@
                     android:layout_marginTop="@dimen/_9pxv"
                     android:layout_width="match_parent"
                     android:lineSpacingExtra="@dimen/_10pxh"
-                    android:text="@{detailVM.detailModel.txtDescriptionOne}"
+                    android:text="@string/msg_spend_5_days_an"
                     style="@style/txtInterregular14_1" tools:text="@string/msg_spend_5_days_an"/>
                 <LinearLayout android:gravity="start"
                     android:id="@+id/linearButton"
@@ -450,7 +448,6 @@
                         android:paddingStart="@dimen/_25pxh"
                         android:paddingTop="@dimen/_14pxv"
                         android:singleLine="true"
-                        android:text="@={detailVM.detailModel.etAddtocartValue}"
                         android:textColorHint="@color/white_A701"
                         style="@style/etSolidRounded" tools:ignore="Autofill"/>
                     <androidx.appcompat.widget.AppCompatButton

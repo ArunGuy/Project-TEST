@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
-    <data>
-        <variable name="settingVM" type="com.arunwichsapplication.app.modules.setting.data.viewmodel.SettingVM"/>
-    </data>
+    <data/>
     <LinearLayout android:gravity="start"
         android:id="@+id/linearSetting"
         android:layout_height="match_parent"
@@ -31,7 +29,7 @@
                 android:layout_marginTop="@dimen/_93pxv"
                 android:layout_weight="0.96" android:layout_width="0dp"
                 android:singleLine="true"
-                android:text="@{settingVM.settingModel.txtAccountSetting}"
+                android:text="@string/lbl_account_setting2"
                 style="@style/txtIntersemibold20" tools:text="@string/lbl_account_setting2"/>
         </LinearLayout>
         <LinearLayout android:gravity="start"
@@ -52,7 +50,7 @@
                     android:layout_marginTop="@dimen/_13pxv"
                     android:layout_weight="0.97"
                     android:layout_width="0dp" android:singleLine="true"
-                    android:text="@{settingVM.settingModel.txtAccountSecur}"
+                    android:text="@string/msg_account_secur"
                     style="@style/txtIntermedium14_1" tools:text="@string/msg_account_secur"/>
                 <ImageView android:id="@+id/imageArrowright"
                     android:layout_height="@dimen/_9pxh"
@@ -77,7 +75,7 @@
                     android:layout_marginTop="@dimen/_13pxv"
                     android:layout_weight="0.95"
                     android:layout_width="0dp" android:singleLine="true"
-                    android:text="@{settingVM.settingModel.txtMyAddresses}"
+                    android:text="@string/lbl_my_addresses"
                     style="@style/txtIntermedium14_1" tools:text="@string/lbl_my_addresses"/>
                 <ImageView android:id="@+id/imageArrowrightOne"
                     android:layout_height="@dimen/_9pxh"
@@ -102,7 +100,7 @@
                     android:layout_marginTop="@dimen/_12pxv"
                     android:layout_weight="0.97"
                     android:layout_width="0dp" android:singleLine="true"
-                    android:text="@{settingVM.settingModel.txtBankAccounts}"
+                    android:text="@string/msg_bank_accounts"
                     style="@style/txtIntermedium14_1" tools:text="@string/msg_bank_accounts"/>
                 <ImageView android:id="@+id/imageArrowrightTwo"
                     android:layout_height="@dimen/_9pxh"

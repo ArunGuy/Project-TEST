@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
-    <data>
-        <variable name="resultVM" type="com.arunwichsapplication.app.modules.result.data.viewmodel.ResultVM"/>
-    </data>
+    <data/>
     <LinearLayout android:gravity="start"
         android:id="@+id/linearColumnarrowleft"
         android:layout_height="match_parent"
@@ -73,7 +71,7 @@
                     android:paddingStart="@dimen/_9pxh"
                     android:paddingTop="@dimen/_10pxv"
                     android:singleLine="true"
-                    android:text="@{resultVM.resultModel.txtFrame2433}"
+                    android:text="@string/lbl_relevance"
                     style="@style/txtSolid" tools:text="@string/lbl_relevance"/>
                 <TextView android:ellipsize="end"
                     android:id="@+id/txtFrame2434"
@@ -87,7 +85,7 @@
                     android:paddingStart="@dimen/_9pxh"
                     android:paddingTop="@dimen/_10pxv"
                     android:singleLine="true"
-                    android:text="@{resultVM.resultModel.txtFrame2434}"
+                    android:text="@string/lbl_latest"
                     style="@style/txtSolid" tools:text="@string/lbl_latest"/>
                 <TextView android:ellipsize="end"
                     android:id="@+id/txtFrame2435"
@@ -101,7 +99,7 @@
                     android:paddingStart="@dimen/_9pxh"
                     android:paddingTop="@dimen/_11pxv"
                     android:singleLine="true"
-                    android:text="@{resultVM.resultModel.txtFrame2435}"
+                    android:text="@string/lbl_top_sales"
                     style="@style/txtSolid" tools:text="@string/lbl_top_sales"/>
             </LinearLayout>
             <LinearLayout android:id="@+id/linearRowframe2441"
@@ -136,7 +134,7 @@
                         android:layout_width="0dp"
                         android:lineSpacingExtra="@dimen/_4pxh"
                         android:singleLine="true"
-                        android:text="@{resultVM.resultModel.txtMall}"
+                        android:text="@string/lbl_mall"
                         style="@style/txtIntersemibold16_3" tools:text="@string/lbl_mall"/>
                 </LinearLayout>
                 <LinearLayout android:id="@+id/linearRowvector"
@@ -165,7 +163,7 @@
                         android:layout_width="0dp"
                         android:lineSpacingExtra="@dimen/_4pxh"
                         android:singleLine="true"
-                        android:text="@{resultVM.resultModel.txtLanguage}"
+                        android:text="@string/lbl_free_shipping"
                         style="@style/txtIntersemibold16_3" tools:text="@string/lbl_free_shipping"/>
                 </LinearLayout>
                 <Spinner

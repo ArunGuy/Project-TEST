@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
-    <data>
-        <variable name="logInVM" type="com.arunwichsapplication.app.modules.login.data.viewmodel.LogInVM"/>
-    </data>
+    <data/>
     <FrameLayout android:id="@+id/frameLogin"
         android:layout_height="match_parent"
         android:layout_width="match_parent" style="@style/groupStyleyellow_50">
@@ -34,7 +32,7 @@
                     android:layout_marginTop="@dimen/_30pxv"
                     android:layout_width="wrap_content"
                     android:singleLine="true"
-                    android:text="@{logInVM.logInModel.txtLogin}"
+                    android:text="@string/lbl_log_in2"
                     style="@style/txtInterextrabold32" tools:text="@string/lbl_log_in2"/>
                 <com.google.android.material.textfield.TextInputLayout
                     android:hint="@string/lbl_email"
@@ -54,7 +52,6 @@
                         android:layout_height="wrap_content"
                         android:layout_width="match_parent"
                         android:singleLine="true"
-                        android:text="@={logInVM.logInModel.etFrameThreeValue}"
                         android:textColor="@color/gray_400"
                         android:textFontWeight="600"
                         android:textSize="@dimen/_16pxh" android:textStyle="bold"/>
@@ -82,7 +79,6 @@
                             android:layout_height="wrap_content"
                             android:layout_width="match_parent"
                             android:singleLine="true"
-                            android:text="@={logInVM.logInModel.etCreatefromfraValue}"
                             android:textColor="@color/black_900" android:textSize="@dimen/_8pxh"/>
                     </com.google.android.material.textfield.TextInputLayout>
                     <TextView android:ellipsize="end"
@@ -92,7 +88,7 @@
                         android:layout_height="wrap_content"
                         android:layout_width="match_parent"
                         android:singleLine="true"
-                        android:text="@{logInVM.logInModel.txtPassword}"
+                        android:text="@string/lbl_password"
                         style="@style/txtIntersemibold16" tools:text="@string/lbl_password"/>
                 </FrameLayout>
                 <androidx.appcompat.widget.AppCompatButton
@@ -121,7 +117,7 @@
                     android:layout_marginTop="@dimen/_26pxv"
                     android:layout_width="wrap_content"
                     android:singleLine="true"
-                    android:text="@{logInVM.logInModel.txtForgotyourpas}"
+                    android:text="@string/msg_forgot_your_pas"
                     style="@style/txtIntersemibold13_1" tools:text="@string/msg_forgot_your_pas"/>
             </LinearLayout>
             <LinearLayout android:id="@+id/linearRowgoogle"
@@ -152,7 +148,7 @@
                         android:layout_weight="0.72"
                         android:layout_width="0dp"
                         android:singleLine="true"
-                        android:text="@{logInVM.logInModel.txtGoogle}"
+                        android:text="@string/lbl_google"
                         style="@style/txtIntersemibold18" tools:text="@string/lbl_google"/>
                 </LinearLayout>
                 <LinearLayout android:id="@+id/linearGoogle1"
@@ -180,7 +176,7 @@
                         android:layout_weight="0.78"
                         android:layout_width="0dp"
                         android:singleLine="true"
-                        android:text="@{logInVM.logInModel.txtFacebook}"
+                        android:text="@string/lbl_facebook"
                         style="@style/txtIntersemibold18" tools:text="@string/lbl_facebook"/>
                 </LinearLayout>
             </LinearLayout>
@@ -196,7 +192,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="0.76"
                     android:layout_width="0dp" android:singleLine="true"
-                    android:text="@{logInVM.logInModel.txtConfirmation}"
+                    android:text="@string/msg_don_t_have_an_a"
                     style="@style/txtInterregular15" tools:text="@string/msg_don_t_have_an_a"/>
                 <TextView android:ellipsize="end"
                     android:id="@+id/txtSignup"
@@ -205,7 +201,7 @@
                     android:layout_marginTop="@dimen/_1pxv"
                     android:layout_weight="0.24"
                     android:layout_width="0dp" android:singleLine="true"
-                    android:text="@{logInVM.logInModel.txtSignup}"
+                    android:text="@string/lbl_sign_up"
                     style="@style/txtIntersemibold15" tools:text="@string/lbl_sign_up"/>
             </LinearLayout>
         </LinearLayout>
