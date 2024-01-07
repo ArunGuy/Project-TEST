@@ -9,7 +9,6 @@ import com.arunwichsapplication.app.appcomponents.base.BaseActivity
 import com.arunwichsapplication.app.appcomponents.facebookauth.FacebookHelper
 import com.arunwichsapplication.app.appcomponents.googleauth.GoogleHelper
 import com.arunwichsapplication.app.databinding.ActivityLogInBinding
-import com.arunwichsapplication.app.modules.account.ui.AccountActivity
 import com.arunwichsapplication.app.modules.login.`data`.viewmodel.LogInVM
 import com.arunwichsapplication.app.modules.signup.ui.SignUpActivity
 import com.facebook.CallbackManager
@@ -24,15 +23,13 @@ import kotlin.Unit
 class LogInActivity : BaseActivity<ActivityLogInBinding>(R.layout.activity_log_in) {
   private val viewModel: LogInVM by viewModels<LogInVM>()
 
-  private val REQUEST_CODE_ACCOUNT_ACTIVITY: Int = 764
-
   private lateinit var googleLogin: GoogleHelper
 
   private var callbackManager: CallbackManager = CallbackManager.Factory.create()
 
   private val facebookLogin: FacebookHelper = FacebookHelper()
 
-  private val REQUEST_CODE_SIGN_UP_ACTIVITY: Int = 392
+  private val REQUEST_CODE_SIGN_UP_ACTIVITY: Int = 167
 
   override fun onActivityResult(
     requestCode: Int,
@@ -46,8 +43,6 @@ class LogInActivity : BaseActivity<ActivityLogInBinding>(R.layout.activity_log_i
   override fun onInitialized(): Unit {
     viewModel.navArguments = intent.extras?.getBundle("bundle")
     binding.logInVM = viewModel
-    val destIntent = AccountActivity.getIntent(this, null)
-    startActivityForResult(destIntent, REQUEST_CODE_ACCOUNT_ACTIVITY)
     googleLogin = GoogleHelper(this,
     { accountInfo ->
       },{ error -> 
