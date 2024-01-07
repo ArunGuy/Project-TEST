@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <resources>
     <string name="app_name">209_arunwich_s_application3</string>
-    <string name="loading">Loading?</string>
+    <string name="loading">Loading…</string>
     <string name="no_internet_connection">No internet connection!</string>
-    <!--TODO ENTER YOUR APP ID BELOW-->
-    <string name="facebook_app_id"/>
-    <!--TODO ENTER YOUR APP ID BELOW (eg: fb0123456789)-->
-    <string name="fb_login_protocol_scheme">fb</string>
-    <!--TODO ENTER YOUR Client Token BELOW-->
-    <string name="facebook_client_token"/>
 <string name="lbl_my_likes">My Likes</string>
   <string name="lbl_color2">color</string>
   <string name="lbl_l">L</string>

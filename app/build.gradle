@@ -81,8 +81,4 @@ dependencies {
     implementation("androidx.security:security-crypto:1.0.0")
     implementation "com.airbnb.android:lottie:3.4.0"
 
-    implementation 'com.google.android.gms:play-services-auth:19.2.0'
-    implementation 'com.facebook.android:facebook-login:8.1.0'
 }
-
-

@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
-    <data>
-        <variable name="propVM" type="com.arunwichsapplication.app.modules.prop.data.viewmodel.PropVM"/>
-    </data>
+    <data/>
     <LinearLayout android:gravity="start" android:id="@+id/linearProp"
         android:layout_height="match_parent"
         android:layout_width="match_parent"
@@ -29,7 +27,7 @@
                 android:layout_marginStart="@dimen/_72pxh"
                 android:layout_weight="0.96" android:layout_width="0dp"
                 android:singleLine="true"
-                android:text="@{propVM.propModel.txtPROPORTIONS}"
+                android:text="@string/lbl_proportions"
                 style="@style/txtIntersemibold20" tools:text="@string/lbl_proportions"/>
         </LinearLayout>
         <ImageView android:id="@+id/imageImageEight"

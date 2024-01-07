@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
-    <data>
-        <variable name="signUpVM" type="com.arunwichsapplication.app.modules.signup.data.viewmodel.SignUpVM"/>
-    </data>
+    <data/>
     <FrameLayout android:id="@+id/frameSignup"
         android:layout_height="match_parent"
         android:layout_width="match_parent" style="@style/groupStyleyellow_50">
@@ -34,7 +32,7 @@
                     android:layout_marginTop="@dimen/_30pxv"
                     android:layout_width="wrap_content"
                     android:singleLine="true"
-                    android:text="@{signUpVM.signUpModel.txtSignup}"
+                    android:text="@string/lbl_sign_up"
                     style="@style/txtInterextrabold32" tools:text="@string/lbl_sign_up"/>
                 <TextView android:ellipsize="end"
                     android:id="@+id/txtFrameThree"
@@ -44,7 +42,7 @@
                     android:layout_marginTop="@dimen/_22pxv"
                     android:layout_width="wrap_content"
                     android:singleLine="true"
-                    android:text="@{signUpVM.signUpModel.txtFrameThree}"
+                    android:text="@string/lbl_email"
                     style="@style/txtOutline" tools:text="@string/lbl_email"/>
                 <FrameLayout android:id="@+id/frameStackcreatefromfra"
                     android:layout_height="@dimen/_20pxv"
@@ -65,7 +63,7 @@
                         android:layout_height="wrap_content"
                         android:layout_width="match_parent"
                         android:singleLine="true"
-                        android:text="@{signUpVM.signUpModel.txtPassword}"
+                        android:text="@string/lbl_password"
                         style="@style/txtIntersemibold16" tools:text="@string/lbl_password"/>
                 </FrameLayout>
                 <FrameLayout
@@ -88,7 +86,7 @@
                         android:layout_height="wrap_content"
                         android:layout_width="match_parent"
                         android:singleLine="true"
-                        android:text="@{signUpVM.signUpModel.txtPhone}"
+                        android:text="@string/lbl_phone"
                         style="@style/txtIntersemibold16" tools:text="@string/lbl_phone"/>
                 </FrameLayout>
                 <androidx.appcompat.widget.AppCompatButton
@@ -115,7 +113,7 @@
                     android:layout_marginStart="@dimen/_35pxh"
                     android:layout_marginTop="@dimen/_24pxv"
                     android:layout_width="match_parent"
-                    android:text="@{signUpVM.signUpModel.txtDescription}"
+                    android:text="@string/msg_by_clicking_thi"
                     style="@style/txtIntersemibold13" tools:text="@string/msg_by_clicking_thi"/>
             </LinearLayout>
             <LinearLayout android:id="@+id/linearRowgoogle"
@@ -146,7 +144,7 @@
                         android:layout_weight="0.72"
                         android:layout_width="0dp"
                         android:singleLine="true"
-                        android:text="@{signUpVM.signUpModel.txtGoogle}"
+                        android:text="@string/lbl_google"
                         style="@style/txtIntersemibold18" tools:text="@string/lbl_google"/>
                 </LinearLayout>
                 <LinearLayout android:id="@+id/linearGoogle1"
@@ -174,7 +172,7 @@
                         android:layout_weight="0.78"
                         android:layout_width="0dp"
                         android:singleLine="true"
-                        android:text="@{signUpVM.signUpModel.txtFacebook}"
+                        android:text="@string/lbl_facebook"
                         style="@style/txtIntersemibold18" tools:text="@string/lbl_facebook"/>
                 </LinearLayout>
             </LinearLayout>
@@ -191,7 +189,7 @@
                     android:layout_marginTop="@dimen/_1pxv"
                     android:layout_weight="0.82"
                     android:layout_width="0dp" android:singleLine="true"
-                    android:text="@{signUpVM.signUpModel.txtConfirmation}"
+                    android:text="@string/msg_already_have_an"
                     style="@style/txtInterregular15" tools:text="@string/msg_already_have_an"/>
                 <TextView android:ellipsize="end"
                     android:id="@+id/txtLogin"
@@ -199,7 +197,7 @@
                     android:layout_marginStart="@dimen/_12pxh"
                     android:layout_weight="0.18"
                     android:layout_width="0dp" android:singleLine="true"
-                    android:text="@{signUpVM.signUpModel.txtLogin}"
+                    android:text="@string/lbl_login"
                     style="@style/txtIntersemibold15" tools:text="@string/lbl_login"/>
             </LinearLayout>
         </LinearLayout>

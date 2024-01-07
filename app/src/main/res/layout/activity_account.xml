@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
-    <data>
-        <variable name="accountVM" type="com.arunwichsapplication.app.modules.account.data.viewmodel.AccountVM"/>
-    </data>
+    <data/>
     <LinearLayout android:gravity="start"
         android:id="@+id/linearAccount"
         android:layout_height="match_parent"
@@ -52,7 +50,7 @@
                                 android:layout_marginEnd="@dimen/_10pxh"
                                 android:layout_width="match_parent"
                                 android:singleLine="true"
-                                android:text="@{accountVM.accountModel.txtNAME}"
+                                android:text="@string/lbl_name"
                                 style="@style/txtInterbold24" tools:text="@string/lbl_name"/>
                             <LinearLayout android:gravity="start"
                                 android:id="@+id/linearAccountsetting"
@@ -67,7 +65,7 @@
                                     android:layout_weight="0.96"
                                     android:layout_width="0dp"
                                     android:singleLine="true"
-                                    android:text="@{accountVM.accountModel.txtAccountsetting}"
+                                    android:text="@string/lbl_account_setting"
                                     style="@style/txtIntermedium14" tools:text="@string/lbl_account_setting"/>
                                 <ImageView
                                     android:id="@+id/imageArrowright"
@@ -103,7 +101,7 @@
                         android:layout_weight="0.34"
                         android:layout_width="0dp"
                         android:singleLine="true"
-                        android:text="@{accountVM.accountModel.txtMyOrder}"
+                        android:text="@string/lbl_my_order"
                         style="@style/txtInterbold16" tools:text="@string/lbl_my_order"/>
                     <LinearLayout
                         android:id="@+id/linearRowviewpurchaseh"
@@ -120,7 +118,7 @@
                             android:layout_weight="0.97"
                             android:layout_width="0dp"
                             android:singleLine="true"
-                            android:text="@{accountVM.accountModel.txtViewPurchaseH}"
+                            android:text="@string/msg_view_purchase_h"
                             style="@style/txtIntermedium12" tools:text="@string/msg_view_purchase_h"/>
                         <ImageView android:id="@+id/imageArrowrightOne"
                             android:layout_height="@dimen/_9pxh"
@@ -163,7 +161,7 @@
                             android:layout_marginTop="@dimen/_10pxv"
                             android:layout_width="wrap_content"
                             android:singleLine="true"
-                            android:text="@{accountVM.accountModel.txtToPay}"
+                            android:text="@string/lbl_to_pay"
                             style="@style/txtIntermedium10" tools:text="@string/lbl_to_pay"/>
                     </LinearLayout>
                     <LinearLayout android:gravity="center_horizontal"
@@ -189,7 +187,7 @@
                             android:layout_marginTop="@dimen/_8pxv"
                             android:layout_width="wrap_content"
                             android:singleLine="true"
-                            android:text="@{accountVM.accountModel.txtToShip}"
+                            android:text="@string/lbl_to_ship"
                             style="@style/txtIntermedium10" tools:text="@string/lbl_to_ship"/>
                     </LinearLayout>
                     <LinearLayout android:gravity="center_horizontal"
@@ -215,7 +213,7 @@
                             android:layout_marginTop="@dimen/_8pxv"
                             android:layout_width="match_parent"
                             android:singleLine="true"
-                            android:text="@{accountVM.accountModel.txtToReceive}"
+                            android:text="@string/lbl_to_receive"
                             style="@style/txtIntermedium10" tools:text="@string/lbl_to_receive"/>
                     </LinearLayout>
                     <LinearLayout android:gravity="center_horizontal"
@@ -240,7 +238,7 @@
                             android:layout_marginTop="@dimen/_8pxv"
                             android:layout_width="match_parent"
                             android:singleLine="true"
-                            android:text="@{accountVM.accountModel.txtToReview}"
+                            android:text="@string/lbl_to_review"
                             style="@style/txtIntermedium10" tools:text="@string/lbl_to_review"/>
                     </LinearLayout>
                 </LinearLayout>
@@ -277,7 +275,7 @@
                             android:layout_weight="0.77"
                             android:layout_width="0dp"
                             android:singleLine="true"
-                            android:text="@{accountVM.accountModel.txtMyLikes}"
+                            android:text="@string/lbl_my_likes"
                             style="@style/txtIntermedium14_1" tools:text="@string/lbl_my_likes"/>
                     </LinearLayout>
                     <ImageView android:id="@+id/imageArrowrightTwo"
@@ -317,7 +315,7 @@
                             android:layout_weight="0.86"
                             android:layout_width="0dp"
                             android:singleLine="true"
-                            android:text="@{accountVM.accountModel.txtRecentlyViewed}"
+                            android:text="@string/lbl_recently_viewed"
                             style="@style/txtIntermedium14_1" tools:text="@string/lbl_recently_viewed"/>
                     </LinearLayout>
                     <ImageView android:id="@+id/imageArrowrightThree"
@@ -357,7 +355,7 @@
                             android:layout_weight="0.81"
                             android:layout_width="0dp"
                             android:singleLine="true"
-                            android:text="@{accountVM.accountModel.txtMyReview}"
+                            android:text="@string/lbl_my_review"
                             style="@style/txtIntermedium14_1" tools:text="@string/lbl_my_review"/>
                     </LinearLayout>
                     <ImageView android:id="@+id/imageArrowrightFour"
@@ -397,7 +395,7 @@
                             android:layout_weight="0.89"
                             android:layout_width="0dp"
                             android:singleLine="true"
-                            android:text="@{accountVM.accountModel.txtAccountSettingOne}"
+                            android:text="@string/msg_account_setting"
                             style="@style/txtIntermedium14_1" tools:text="@string/msg_account_setting"/>
                     </LinearLayout>
                     <ImageView android:id="@+id/imageArrowrightFive"
@@ -444,7 +442,7 @@
                             android:layout_weight="0.89"
                             android:layout_width="0dp"
                             android:singleLine="true"
-                            android:text="@{accountVM.accountModel.txtNotificationSe}"
+                            android:text="@string/msg_notification_se"
                             style="@style/txtIntermedium14_1" tools:text="@string/msg_notification_se"/>
                     </LinearLayout>
                     <ImageView android:id="@+id/imageArrowrightSix"
@@ -484,7 +482,7 @@
                             android:layout_weight="0.87"
                             android:layout_width="0dp"
                             android:singleLine="true"
-                            android:text="@{accountVM.accountModel.txtPrivacySetting}"
+                            android:text="@string/msg_privacy_setting"
                             style="@style/txtIntermedium14_1" tools:text="@string/msg_privacy_setting"/>
                     </LinearLayout>
                     <ImageView android:id="@+id/imageArrowrightSeven"
@@ -524,7 +522,7 @@
                             android:layout_weight="0.85"
                             android:layout_width="0dp"
                             android:singleLine="true"
-                            android:text="@{accountVM.accountModel.txtLanguage}"
+                            android:text="@string/lbl_language"
                             style="@style/txtIntermedium14_1" tools:text="@string/lbl_language"/>
                     </LinearLayout>
                     <ImageView android:id="@+id/imageArrowrightEight"
@@ -569,7 +567,7 @@
                         android:layout_marginTop="@dimen/_3pxv"
                         android:layout_width="match_parent"
                         android:singleLine="true"
-                        android:text="@{accountVM.accountModel.txtHomeOne}"
+                        android:text="@string/lbl_home"
                         style="@style/txtIntermedium12_1" tools:text="@string/lbl_home"/>
                 </LinearLayout>
                 <LinearLayout android:id="@+id/linearCart"
@@ -593,7 +591,7 @@
                         android:layout_marginTop="@dimen/_3pxv"
                         android:layout_width="match_parent"
                         android:singleLine="true"
-                        android:text="@{accountVM.accountModel.txtCart}"
+                        android:text="@string/lbl_cart"
                         style="@style/txtIntermedium12_1" tools:text="@string/lbl_cart"/>
                 </LinearLayout>
                 <LinearLayout android:id="@+id/linearPropor"
@@ -616,7 +614,7 @@
                         android:layout_marginTop="@dimen/_1pxv"
                         android:layout_width="match_parent"
                         android:singleLine="true"
-                        android:text="@{accountVM.accountModel.txtProportion}"
+                        android:text="@string/lbl_proportion"
                         style="@style/txtIntermedium12_1" tools:text="@string/lbl_proportion"/>
                 </LinearLayout>
                 <LinearLayout android:id="@+id/linearNoti"
@@ -640,7 +638,7 @@
                         android:layout_marginTop="@dimen/_1pxv"
                         android:layout_width="match_parent"
                         android:singleLine="true"
-                        android:text="@{accountVM.accountModel.txtNotification}"
+                        android:text="@string/lbl_notification"
                         style="@style/txtIntermedium12_1" tools:text="@string/lbl_notification"/>
                 </LinearLayout>
                 <LinearLayout android:id="@+id/linearAc"
@@ -664,7 +662,7 @@
                         android:layout_marginTop="@dimen/_3pxv"
                         android:layout_width="match_parent"
                         android:singleLine="true"
-                        android:text="@{accountVM.accountModel.txtAccount}"
+                        android:text="@string/lbl_account"
                         style="@style/txtIntermedium12_1" tools:text="@string/lbl_account"/>
                 </LinearLayout>
             </LinearLayout>
